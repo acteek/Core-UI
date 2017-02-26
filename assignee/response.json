@@ -1,0 +1,52 @@
+[
+	{
+		"accountId": "0987",
+		"conversationId": "2d8635dc-f646-4630-832e-64e04b1a0657",
+		"state": "Assigne",
+		"employeeId": "4545",
+		"discourserId": "1c009817-428e-4bf1-a15b-7e68a2a1266c"
+	},
+	{
+		"accountId": "8098098",
+		"conversationId": "ba244976-bbe4-4fec-8f99-e95427846443",
+		"state": "ExpectAssigne",
+		"employeeId": "4545",
+		"discourserId": "1c009817-428e-4bf1-a15b-7e68a2a1266c"
+	},
+	{
+		"accountId": "2323",
+		"conversationId": "2d8635dc-f646-4630-832e-64e04b1a0657",
+		"state": "Assigne",
+		"employeeId": "4545",
+		"discourserId": "1c009817-428e-4bf1-a15b-7e68a2a1266c"
+	},
+	{
+		"accountId": "21212",
+		"conversationId": "2d8635dc-f646-4630-832e-64e04b1a0657",
+		"state": "ExpectAssigne",
+		"employeeId": "4545",
+		"discourserId": "ba244976-bbe4-4fec-8f99-e95427846443"
+	},
+	{
+		"accountId": "21212",
+		"conversationId": "2d8635dc-f646-4630-832e-64e04b1a0657",
+		"state": "ExpectConversation",
+		"employeeId": "4545",
+		"discourserId": "1c009817-428e-4bf1-a15b-7e68a2a1266c"
+	},
+	{
+		"accountId": "21212",
+		"conversationId": "2d8635dc-f646-4630-832e-64e04b1a0657",
+		"state": "Hui",
+		"employeeId": "4545",
+		"discourserId": ""
+	},
+	{
+		"accountId": "21212",
+		"conversationId": "2d8635dc-f646-4630-832e-64e04b1a0657",
+		"state": "ExpectConversation",
+		"employeeId": "",
+		"discourserId": "1c009817-428e-4bf1-a15b-7e68a2a1266c"
+	}
+
+]

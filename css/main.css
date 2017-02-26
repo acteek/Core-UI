@@ -1,0 +1,22 @@
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+}
+
+.navbar-custom1 .nav > li > a:focus {
+	background-color: #e6f2ff 
+}
+.navbar-custom1 .nav > li > a:hover,
+.navbar-custom1 .nav > li.active > a {
+  /*color: #000000 ;*/
+  background-color: #e6f2ff ;
+}
+
+
+/*-- change navbar dropdown color --*/
+.navbar-custom1 .navbar-nav .open .dropdown-menu>li>a,.navbar-custom1 .navbar-nav .open .dropdown-menu {
+  background-color: #11bb11;
+  color:#ffffff;
+}
+
+
