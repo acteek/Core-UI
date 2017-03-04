@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon"  href="img/Citadel_Core_logo.svg">
+	<link rel="icon"  href="core_logo.ico">
 	<title>Core-App</title>
 	<!-- CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -13,62 +13,53 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 </head>
 <body>
-<div id="app1">
-	<!-- Navigation -->
-	<nav class="navbar navbar-default navbar-fixed-top navbar-custom1" role="navigation">
-		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">MAIN</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand hidden-xs" href="/">Core-UI</a>
-				<a class="navbar-brand visible-xs" href="/">Core-UI</a>
-			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-left">
-					<li> 
-					<router-link to="/view">Статистика</router-link>	
-					</li>
-					<li> 
-					<router-link to="/conv">Обращения</router-link>	
-					</li>
-					<li>
-					<router-link to="#" >Операторы</router-link>	
-					</li>
-					<!-- <li>
-					<router-link to="/reglament">Регламент</router-link>	
-					</li> -->
-				</ul>
-				<form class="navbar-form">
-					<div class="form-group" style="display:inline;">
-						<div class="input-group" style="display:table;">
-							<span class="input-group-addon" style="width:1%;"><span class="info glyphicon glyphicon-search"></span></span>
-							<input class="form-control" v-model="searchMessage" placeholder="Поиск" type="text">
+	<div id="app1">
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top navbar-custom1" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">MAIN</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand hidden-xs" href="/">Core-UI</a>
+					<a class="navbar-brand visible-xs" href="/">Core-UI</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-left">
+						<li> 
+							<router-link to="/view">Статистика</router-link>	
+						</li>
+						<li> 
+							<router-link to="/conv">Обращения</router-link>	
+						</li>
+						<li>
+							<router-link to="#" >Операторы</router-link>	
+						</li>
+					</ul>
+					<form class="navbar-form">
+						<div class="form-group" style="display:inline;">
+							<div class="input-group" style="display:table;">
+								<span class="input-group-addon" style="width:1%;"><span class="info glyphicon glyphicon-search"></span></span>
+								<input class="form-control" v-model="searchMessage" placeholder="Поиск" type="text">
+							</div>
 						</div>
-					</div>
-				</form>               
-			</div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
-	</nav>
-	<!-- Begin page content -->
-	<div class="container">
-		<div id="app">
-			<!-- {{searchMessage}} -->
-			 <!-- отображение компонента, для которого совпал путь -->
-  				<router-view></router-view>
+					</form>               
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		<!-- Begin page content -->
+		<div class="container">
+			<div id="app">
+				<!-- отображение компонента, для которого совпал путь -->
+				<router-view></router-view>
+			</div>
 		</div>
-	</div>
-<!-- <script type="text/x-template" id="conv-template">
-  <table>
-  	<td><h1>Тут будут Обращения и {{mes}}</h1></td>
-  </table>
-   -->
-</script>
+	</script>
 </div>
     <!-- JavaScript
     ================================================== -->
