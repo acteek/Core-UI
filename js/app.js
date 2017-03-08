@@ -12,11 +12,11 @@ const Conversations = Vue.extend({
 		} 
 	},
 	methods: {
-		deleteConv: function(accountId,cid){
+		deleteConv: function(accountId,cid,index){
 			this.$http.post('/assignee/remove/account/'+accountId+'/cid/'+cid)
-			var element = this.messages.filter((ms)=>{return ms.conversationId == cid})[0]
-			var element_index = this.messages.indexOf(element)
-			this.messages.splice(element_index, 1)	
+			// var element = this.messages.filter((ms)=>{return ms.conversationId == cid})[0]
+			// var element_index = this.messages.indexOf(element)
+			this.messages.splice(index, 1)	
 		},
 		getAssignee: function(){
 			this.$http.get('/assignee/response.json')
@@ -47,10 +47,10 @@ const Conversations = Vue.extend({
 	'<div v-if="messages.length!=0">'+
 	'<table class="table table-hover table-bordered table-responsive">'+
 	'<thead ><tr class="active"><th>Cid</th><th>Аккаунт</th><th>Статус</th><th>Собеседник</th><th>Оператор</th><th></th></tr></thead>' +
-	'<tbody v-for="ms in filtermessages">' +
+	'<tbody v-for="(ms,index) in filtermessages">' +
 	'<tr v-bind:class="ms.status" v-bind:id ="ms.conversationId"  >' +
 	'<td>{{ms.conversationId}}</td><td>{{ms.accountId}}</td><td>{{ms.state}}</td><td>{{ms.discourserId}}</td><td>{{ms.employeeId}}</td>' +
-	'<td><button v-on:click="deleteConv(ms.accountId,ms.conversationId)" type="button" class="btn btn-danger btn-sm" >Закрыть</button></td>' +
+	'<td><button v-on:click="deleteConv(ms.accountId,ms.conversationId,index)" type="button" class="btn btn-danger btn-sm" >Закрыть</button></td>' +
 	'</tr>' +
 	'</tbody>'+
 	'</table>'+
